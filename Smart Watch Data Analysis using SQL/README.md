@@ -1,23 +1,37 @@
-# Charlie_Project
-Web scraping Data Engineering and Google sheets Data Analysis project
+# Smart watch data analysis using SQL and python
+Analyze smart watch dataset and answer the questions below. 
 
 ## Project Objective
 Data Engineering Aspect
-Write a Python script that does the following automatically:
-* Scrape Section titles and prices from the provided website https://www.nigerianstat.gov.ng 
-* Store the scraped values in a Comma sepearted value file(csv) 
-* Writes the Scraped values to a Google online worksheet 
+Write a Python script that does the following when run:
+* Clean imported dataset
+* Connet to postgres SQL database 
+* Create table
+* Upload cleaned dataset
 
-Data Analysis
-After populating the Google online worksheet the next phase is creating a Dashboard that displays the scraped data using google sheets.
-Here's the link to the Dashboard and Webscraped worksheet 
-https://docs.google.com/spreadsheets/d/1njhHOL1HZT0BWHTqge2QbOFKppdmpejr3lWSFcms_Jo
-![charlie_dashboard](https://user-images.githubusercontent.com/66309302/178146919-6e106cd6-656f-49cc-bd30-13903d568660.PNG)
+Query the Postgre SQL database and answers the questions below
+* What top 5 brands has the highest price?
+* What is the most commonly used os by smart watches?
+* What connectivity medium do most of the smart watches use?
+* What top 5 brands has the longest battery life in days?
+* What percentage of smart watch have and have not GPS (inclusive of brands)?
+* What percentage of smart watch have and have not NFC (inclusive of brands)?
 
-## Project Implementation
-This project script is coded in python and the visualization dashboard created using google sheets.
+## Dataset Information
+Columns:
+* Brand: the manufacturer of the smartwatch
+* Model: the specific model of the smartwatch
+* Operating System: the operating system used by the smartwatch (e.g. watchOS, Wear OS, Garmin OS, Fitbit OS, etc.)
+* Connectivity: the types of connectivity supported by the smartwatch (e.g. Bluetooth, Wi-Fi, Cellular)
+* Display Type: the type of display technology used by the smartwatch (e.g. AMOLED, Retina, E-Ink, LCD)
+* Display Size (inches): the size of the smartwatch's display in inches
+* Resolution: the resolution of the smartwatch's display in pixels
+* Water Resistance (meters): the depth to which the smartwatch can be submerged in water without damage
+* Battery Life (days): the estimated battery life of the smartwatch in days
+* Heart Rate Monitor: whether or not the smartwatch has a built-in heart rate monitor
+* GPS: whether or not the smartwatch has built-in GPS for location tracking
+* NFC: whether or not the smartwatch has NFC (Near Field Communication) for contactless payments or other wireless data transfer.
+* Price (USD): the price of the smartwatch in US dollars
 
 **Reference**:
-My Project https://github.com/Akunnadove/National-Bureau-of-Statistics-Web-Scraping-in-Python
-Skillshare Webscraping Course developed by Shubham Sarda(Python developer)
-Avra channel on Youtube https://www.youtube.com/watch?v=ZVfzDOWiOQ0&t=846s
+https://www.kaggle.com/datasets/rkiattisak/smart-watch-prices
